@@ -1,0 +1,70 @@
+body {
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  word-spacing: 2px;
+  padding: 1px
+}
+
+@font-face {
+  font-family: 'Pattaya';
+  src: url(../Fonts/Pattaya/Pattaya-Regular.ttf);
+}
+
+form {
+  height: 400px;
+  box-shadow: 5px 5px 5px 5px #2222228b;
+}
+
+h2 {
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+}
+
+.o-letter {
+  width: 17px;
+  height: 17px;
+  border: 4px solid white;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  display: inline-block;
+  animation: rotation 1s linear infinite forwards;
+  margin: 0px 5px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.holder {
+  position: relative;
+}
+
+.label-holder {
+  position: absolute;
+  top: -40px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.errorMassageBox {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.justify-txt {
+  text-align: justify;
+  text-justify: inter-word;
+}

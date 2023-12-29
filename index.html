@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <form
+            class="w-50 container position-absolute start-50 top-50 translate-middle text-center text-white d-flex justify-content-center align-items-center flex-wrap overflow-hidden py-3 rounded-2 gap-3 bg-transparent ">
+            <h2 class="w-100 h2">L<div class="o-letter"></div>gin</h2>
+
+
+            <div class="w-100 holder py-2">
+                <div class="label-holder py-3 w-100" id="emailLabel"><i class="fa-solid fa-envelope"></i> Email</div>
+                <input type="text" required class="form-control container bg-transparent w-75 text-white" id="userEmailInput">
+            </div>
+
+            <div class="w-100 holder py-2">
+                <div class="label-holder py-3 w-100" id="passLabel"> <i class="fa-solid fa-lock"></i> Password</div>
+                <input type="password" id="userpassInput" required
+                class="form-control w-75 container bg-transparent text-white">
+            </div>
+
+            <a id="redirectHome"><button onclick="login()" type="button" class="btn btn-light fw-bold" style="color: teal; font-size: 12px;">Login</button></a>
+            <small class="w-100">Don't have an account ? <a href="signup.html" style="color: #222;">Sign Up</a> </small>
+        </form>
+    </div>
+    <div class="layer d-flex justify-content-center align-items-center d-none" id="layer">
+        <button id="closeBtn" class=" fs-5 position-absolute top-0 end-0 mt-4 me-5 bg-transparent border-0 " onclick="closeModel()"><i class="fa-solid fa-close "></i></button>
+        <div class="errorMassageBox rounded-1 d-flex justify-content-center align-items-center text-center p-5 flex-wrap" id="errorMassageBox">
+            
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
